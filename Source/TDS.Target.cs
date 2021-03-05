@@ -3,12 +3,12 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class TDSTarget : TargetRules
+public class TPSTarget : TargetRules
 {
-	public TDSTarget(TargetInfo Target) : base(Target)
+	public TPSTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.Add("TDS");
+		ExtraModuleNames.Add("TPS");
 	}
 }

@@ -3,12 +3,12 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class TDSEditorTarget : TargetRules
+public class TPSEditorTarget : TargetRules
 {
-	public TDSEditorTarget(TargetInfo Target) : base(Target)
+	public TPSEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.Add("TDS");
+		ExtraModuleNames.Add("TPS");
 	}
 }

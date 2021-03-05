@@ -1,14 +1,14 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "TDSGameMode.h"
-#include "TDSPlayerController.h"
-#include "TDSCharacter.h"
+#include "TPSGameMode.h"
+#include "TPSPlayerController.h"
+#include "TPSCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
-ATDSGameMode::ATDSGameMode()
+ATPSGameMode::ATPSGameMode()
 {
 	// use our custom PlayerController class
-	PlayerControllerClass = ATDSPlayerController::StaticClass();
+	PlayerControllerClass = ATPSPlayerController::StaticClass();
 
 	// set default pawn class to our Blueprinted character
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/Blueprints/Character/TopDownCharacter"));

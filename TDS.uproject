@@ -5,7 +5,7 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "TDS",
+			"Name": "TPS",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

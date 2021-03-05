@@ -4,15 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
-#include "TDSPlayerController.generated.h"
+#include "TPSPlayerController.generated.h"
 
 UCLASS()
-class ATDSPlayerController : public APlayerController
+class ATPSPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
 public:
-	ATDSPlayerController();
+	ATPSPlayerController();
 
 protected:
 	/** True if the controlled character should navigate to the mouse cursor. */
@@ -31,7 +31,7 @@ protected:
 
 	/** Navigate player to the current touch location. */
 	void MoveToTouchLocation(const ETouchIndex::Type FingerIndex, const FVector Location);
-	
+
 	/** Navigate player to the given world location. */
 	void SetNewMoveDestination(const FVector DestLocation);
 
@@ -39,5 +39,3 @@ protected:
 	void OnSetDestinationPressed();
 	void OnSetDestinationReleased();
 };
-
-
